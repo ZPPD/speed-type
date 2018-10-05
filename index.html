@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='stylesheet' href='style.css'>
+    <title>Speed Type</title>
+</head>
+<body>
+    <header class='header'>
+        <h1>Speed Type</h1>
+    </header>
+    <div class='wrapper'>
+
+    <!-- Word & Input -->
+        <div class='start'>
+            <p class='lead'>Type the given Word within <span id='seconds'>5</span> Seconds:</p>
+            <h2 class='current-word'id='current'>hello</h2>
+            <input type='text' class='input' placeholder='Start typing...' id='word-input' autofocus>
+            <h3 id='message'></h3>
+
+            <!-- Time & Score columns -->
+            <div class='grid'>
+            <div class='grid1 time'>
+                <h4>Time Left: <span id='time'>0</span></h4>
+            </div>
+            <div class='grid1 score'>
+                <h4>Score: <span id='score'>0</span></h4>
+            </div>
+        </div>
+        </div>
+
+        <!-- Instructions -->
+        <div class='instructions'>
+            <div class='card'>
+                <h4>Instructions:</h4>
+                <p>Type each word in the given amount of the sseconds to score. To play again, just type the current word. Your score will reset</p>
+            </div>
+        </div>
+    </div>
+
+    <script src='main.js'></script>
+</body>
+</html>
